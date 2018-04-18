@@ -1,0 +1,171 @@
+$font-family: null;
+$font-base_size: null;
+$font-base_line-height: null;
+$font-base_color: null;
+$font-p_color:null;
+$font-h_color:null;
+$font-h_family: null;
+$button_menu-background: null;
+$button_menu-color: null;
+$button_menu_hover-background: null;
+$button_menu_hover-color: null;
+$button_menu_active-background: null;
+$button_menu_active-color: null;
+$button_default-background: null;
+$button_default-color: null;
+$link_class-color: null;
+$link_class_hover-color:null;
+$a_link_hover-color:null;
+$color_band-background: null;
+$plain_text-background:null;
+$plain_text-color:null;
+$background-color: null;
+$footer-background: null;
+$footer-color:null;
+$nav-position:null; /*From the bottom of nav*/
+$header-background: null;
+$navColor_base: null;
+/*===Custom====*/
+
+/*--reset boostsrap--*/
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .nav > li a:hover, .nav > li > a:focus{
+background: $button_menu_hover-background;
+color: $button_menu_hover-color;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+background: $button_menu_active-background;
+color: $button_menu_active-color;
+}
+
+
+/*=======GENERAL==========*/
+.container p{font-size: $font-base_size; color:$font-p_color}
+.container h1{font-size: 2em;   color:$font-h_color;  font-family: $font-h_family}
+.container h2{font-size: 1.6em; color:$font-h_color; font-family: $font-h_family}
+.container h3{font-size: 1.4em;   color:$font-h_color; font-family: $font-h_family}
+.container h4{font-size: 1.12em;  color:$font-h_color; font-family: $font-h_family}
+.container h5{font-size: 1em; color:$font-h_color; font-family: $font-h_family}
+
+
+
+html{
+   height: 100%;
+}
+
+
+#body{
+color:$font-base_color;
+background-color: $background-color;
+letter-spacing: .03em;
+min-height: 100%;
+font-family: $font-family !important;
+font-size: $font-base_size;
+line-height: $font-base_line-height;
+}
+
+
+.content_wrapper  a{
+       &:hover{
+       color:$a_link_hover-color;
+       }
+}
+
+
+/*=======HELPER CLASSES==========*/
+.link {
+color:$link_class-color;
+       &:hover{
+              color:$link_class_hover-color;
+       }
+}
+
+.btn.btn-default{
+background: $button_default-background;
+color: $button_default-color;
+}
+
+
+
+/*========NAV========*/
+.plain_text{
+background:$plain_text-background;
+color:$plain_text-color;
+}
+
+.color_band{
+background:$color_band-background;
+}
+
+
+/*--general--*/
+
+#main_menu{
+background: $header-background;
+     li
+     {
+
+      }
+      $elements: 10;
+      @for $i from 0 to $elements{
+             .sub-menu  li:nth-child(#{$i}) a {
+          background: darken($navColor_base, percentage($i/20));
+        }
+      }
+
+
+      $elements: 7;
+      @for $i from 0 to $elements{
+           li:nth-child(#{$i}) {
+          background: darken($navColor_base, percentage($i/25));
+        }
+      }
+}
+
+@media screen and (min-width:992px){
+div.main_nav_container{
+    bottom:$nav-position;
+}
+}
+
+
+#food_nav{
+.menu_nav_item:hover{
+background: $button_menu_hover-background;
+color: $button_menu_hover-color;
+}
+
+.menu_nav_item.active {
+background: $button_menu_active-background;
+color: $button_menu_active-color;
+}
+
+}
+
+/* posts archive*/
+.widget_recent_entries ul > li{
+list-style: disc;
+&:hover{
+color:$a_link_hover-color;
+> a{
+color:$a_link_hover-color;
+}
+}
+
+
+}
+.post_link{
+text-decoration: underline;
+color:$link_class-color;
+}
+/*=======Menu===========*/
+
+.menu_item.title em {
+    padding: 0 5px;
+}
+/*=======foooter===========*/
+
+div.footer_full_background{
+    background: $footer-background;
+    color: $footer-color;
+}

@@ -1,0 +1,133 @@
+/*From the bottom of nav*/
+/*===Custom====*/
+#wrapper {
+  background: white; }
+
+body {
+  background-image: url(https://craftsmantableandtap.com/wp-content/uploads/2017/08/bg.jpg); }
+
+@media screen and (min-width: 501px) {
+  .logo {
+    bottom: 6px; } }
+/*--reset boostsrap--*/
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover, .nav > li a:hover, .nav > li > a:focus {
+  background: #476D8F;
+  color: white; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  background: #476D8F;
+  color: white; }
+
+/*=======GENERAL==========*/
+.container p {
+  font-size: 16px; }
+
+.container h1 {
+  font-size: 2em; }
+
+.container h2 {
+  font-size: 1.6em; }
+
+.container h3 {
+  font-size: 1.4em; }
+
+.container h4 {
+  font-size: 1.12em; }
+
+.container h5 {
+  font-size: 1em; }
+
+html {
+  height: 100%; }
+
+#body {
+  color: black;
+  letter-spacing: .03em;
+  min-height: 100%;
+  font-family: "EB Garamond", serif !important;
+  font-size: 16px;
+  line-height: 1.5em; }
+
+.content_wrapper a:hover {
+  color: #999; }
+
+/*=======HELPER CLASSES==========*/
+.link {
+  color: #476D8F; }
+  .link:hover {
+    color: #ddd; }
+
+.btn.btn-default {
+  background: #476D8F;
+  color: white; }
+
+/*========NAV========*/
+.plain_text {
+  background: #476D8F;
+  color: white; }
+
+/*--general--*/
+#main_menu .sub-menu li:nth-child(0) a {
+  background: #ec1d30; }
+#main_menu .sub-menu li:nth-child(1) a {
+  background: #dd1325; }
+#main_menu .sub-menu li:nth-child(2) a {
+  background: #c51121; }
+#main_menu .sub-menu li:nth-child(3) a {
+  background: #ae0f1d; }
+#main_menu .sub-menu li:nth-child(4) a {
+  background: #960d19; }
+#main_menu .sub-menu li:nth-child(5) a {
+  background: #7f0b15; }
+#main_menu .sub-menu li:nth-child(6) a {
+  background: #670911; }
+#main_menu .sub-menu li:nth-child(7) a {
+  background: #50070d; }
+#main_menu .sub-menu li:nth-child(8) a {
+  background: #380509; }
+#main_menu .sub-menu li:nth-child(9) a {
+  background: #210306; }
+#main_menu li:nth-child(0) {
+  background: #ec1d30; }
+#main_menu li:nth-child(1) {
+  background: #e21326; }
+#main_menu li:nth-child(2) {
+  background: #cf1123; }
+#main_menu li:nth-child(3) {
+  background: #bc1020; }
+#main_menu li:nth-child(4) {
+  background: #a90e1c; }
+#main_menu li:nth-child(5) {
+  background: #960d19; }
+#main_menu li:nth-child(6) {
+  background: #840b16; }
+
+#food_nav .menu_nav_item:hover {
+  background: #476D8F;
+  color: white; }
+#food_nav .menu_nav_item.active {
+  background: #476D8F;
+  color: white; }
+
+/* posts archive*/
+.widget_recent_entries ul > li {
+  list-style: disc; }
+  .widget_recent_entries ul > li:hover {
+    color: #999; }
+    .widget_recent_entries ul > li:hover > a {
+      color: #999; }
+
+.post_link {
+  text-decoration: underline;
+  color: #476D8F; }
+
+/*=======Menu===========*/
+.menu_item.title em {
+  padding: 0 5px; }
+
+/*=======foooter===========*/
+div.footer_full_background {
+  background: #23495E;
+  color: white; }
+
+/*# sourceMappingURL=child.css.map */
